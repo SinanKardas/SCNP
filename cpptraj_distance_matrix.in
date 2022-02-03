@@ -1,0 +1,27 @@
+#Get the center-of-mass of each residue
+parm pPP5.prmtop
+trajin pPP5_prod_01.nc
+vector res1 center :1
+vector res2 center :2
+vector res3 center :3
+vector res4 center :4
+vector res5 center :5
+vector res6 center :6
+vector res7 center :7
+vector res8 center :8
+vector res9 center :9
+vector res10 center :10
+vector res11 center :11
+vector res12 center :12
+vector res13 center :13
+vector res14 center :14
+run
+writedata resvectors.nc vectraj trajfmt netcdf parmout resvectors.parmtop noorigin res*
+go
+
+#Matrix distance between centers-of-mass of each residues
+parm resvectors.parmtop
+trajin resvectors.nc
+matrix dist :1-14 out Rij.dat name Rij 
+
+
