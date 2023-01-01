@@ -1,0 +1,75 @@
+!!index array str
+ "DNI"
+!entry.DNI.unit.atoms table  str name  str type  int typex  int resx  int flags  int seq  int elmnt  dbl chg
+ "NI"  "NI" 0 1 131072 1 28 -1.000000
+ "DM1" "D1" 0 1 131072 2 -1 0.500000
+ "DM2" "D2" 0 1 131072 3 -1 0.500000
+ "DM3" "D3" 0 1 131072 4 -1 0.500000
+ "DM4" "D2" 0 1 131072 5 -1 0.500000
+ "DM5" "D3" 0 1 131072 6 -1 0.500000
+ "DM6" "D1" 0 1 131072 7 -1 0.500000
+!entry.DNI.unit.atomspertinfo table  str pname  str ptype  int ptypex  int pelmnt  dbl pchg
+ "NI"  "NI" 0  28 0.0
+ "DM1" "D1" 0  -1 0.0
+ "DM2" "D2" 0  -1 0.0
+ "DM3" "D3" 0  -1 0.0
+ "DM4" "D2" 0  -1 0.0
+ "DM5" "D3" 0  -1 0.0
+ "DM6" "D1" 0  -1 0.0
+!entry.DNI.unit.boundbox array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.DNI.unit.childsequence single int
+ 2
+!entry.DNI.unit.connect array int
+ 0
+ 0
+!entry.DNI.unit.connectivity table  int atom1x  int atom2x  int flags
+ 1 2 1
+ 1 3 1
+ 1 4 1
+ 1 5 1
+ 1 6 1
+ 1 7 1
+!entry.DNI.unit.hierarchy table  str abovetype  int abovex  str belowtype  int belowx
+ "U" 0 "R" 1
+ "R" 1 "A" 1
+ "R" 1 "A" 2
+ "R" 1 "A" 3
+ "R" 1 "A" 4
+ "R" 1 "A" 5
+ "R" 1 "A" 6
+ "R" 1 "A" 7
+!entry.DNI.unit.name single str
+ "DNI"
+!entry.DNI.unit.positions table  dbl x  dbl y  dbl z
+  0.000  0.000  0.000
+  0.000  0.000  0.800
+  1.000  0.000  0.000
+  0.000  1.000  0.000
+ -1.000  0.000  0.000
+  0.000 -1.000  0.000
+  0.000  0.000 -0.800
+!entry.DNI.unit.residueconnect table  int c1x  int c2x  int c3x  int c4x  int c5x  int c6x
+ 0 0 0 0 0 0
+!entry.DNI.unit.residues table  str name  int seq  int childseq  int startatomx  str restype  int imagingx
+ "DNI" 1 8 1 "?" 0
+!entry.DNI.unit.residuesPdbSequenceNumber array int
+ 0
+!entry.DNI.unit.solventcap array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.DNI.unit.velocities table  dbl x  dbl y  dbl z
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
